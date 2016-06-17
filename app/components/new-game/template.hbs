@@ -1,0 +1,19 @@
+<form class="newGame form-group" {{action 'saveGame' on="submit"}}>
+
+  <label for="gameName" class="">Game: </label>
+  {{input value=gameName class="form-control"}}
+
+  <label for="gameGenre" class="">Genre: </label>
+  {{input value=gameGenre class="form-control"}}
+
+  <label for="gameDeveloper" class="">Developer Studio: </label>
+  {{input value=gameDeveloper class="form-control"}}
+
+  <label for="gameYear" class=''>Year Released: </label>
+  {{input value=gameYear class="form-control"}}
+
+  <label for="imgURL" class="">imgURL: </label>
+  {{input value=imgURL class="form-control"}}
+  <br>
+  <button class="btn btn-primary btn-block" type="submit">Submit</button>
+</form>

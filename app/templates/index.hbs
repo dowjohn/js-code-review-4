@@ -1,1 +1,11 @@
-{{outlet}}
+<div class="container">
+    <div class="row">
+        {{#each model.games as |game|}}
+            <div class="col-sm-4 thriftyBox">
+
+                {{game-tile game=game}}
+
+            </div>
+        {{/each}}
+    </div>
+</div>

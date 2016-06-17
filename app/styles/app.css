@@ -1,11 +1,13 @@
 #banner {
-  max-width: 1000px;
+  max-width: 959px;
 }
 
 nav {
-  max-width: 1000px;
+  max-width: 959px;
 }
 
 body {
-  max-width: 1000px;
+  max-width: 959px;
+  background-color: #363636;
+  color: #e74c3c;
 }
