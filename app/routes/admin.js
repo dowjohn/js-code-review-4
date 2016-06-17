@@ -9,6 +9,13 @@ export default Ember.Route.extend({
             var newGame = this.store.createRecord('game', params);
             newGame.save();
             this.transitionTo('admin');
-        }
+        },
+        toIndex(){
+            this.transitionTo('admin');
+        },
+        deleteGame(game) {
+            game.destroyRecord();
+            this.transitionTo('admin');
+        },
     }
 });

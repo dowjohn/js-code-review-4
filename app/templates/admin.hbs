@@ -1,1 +1,4 @@
 {{new-game saveGame='saveGame'}}
+{{#each model as |game|}}
+    {{game-tile-admin game=game deleteGame="deleteGame"}}
+ {{/each}}

@@ -1,2 +1,6 @@
-{{game.gameName}}
-{{game.gameGenre}}
+{{#each model as |game|}}
+    <div class="col-sm-4 thriftyBox">
+        <h4>{{game.gameName}}</h4>
+        <p>{{game.gameGenre}}</p>
+    </div>
+{{/each}}
