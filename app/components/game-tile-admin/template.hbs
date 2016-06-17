@@ -1,6 +1,6 @@
 <div class="col-sm-4 thriftyBox">
     <h4>{{game.gameName}}</h4>
     <p>{{game.gameGenre}}</p>
-    {{update-game updateGame="updateGame"}}
+    {{update-game game=game updateGame="updateGame"}}
     <button type="button" {{action 'deleteGame' game}}>Delete Game</button>
 </div>

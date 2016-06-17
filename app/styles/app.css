@@ -19,3 +19,7 @@ body {
 .imgDetails {
     width: 100%;
 }
+
+.centerText {
+    text-align: center;
+}

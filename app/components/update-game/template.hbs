@@ -1,1 +1,39 @@
-{{yield}}
+{{#if updateGameForm}}
+    <div>
+      <form>
+          <div class="form-group">
+              <label for="gameName">Update Game:</label>
+              {{input value=gameName id="gameName" placeholder=game.gameName}}
+          </div>
+
+          <div class="form-group">
+              <label for="gameGenre">Update Genre:</label>
+              {{input value=gameGenre id="gameGenre" placeholder=game.gameGenre}}
+          </div>
+
+          <div class="form-group">
+              <label for="gameDeveloper">Update Developer:</label>
+              {{input value=gameDeveloper id="gameDeveloper" placeholder=game.gameDeveloper}}
+          </div>
+
+          <div class="form-group">
+              <label for="gameYear">Update Release Year:</label>
+              {{input value=gameYear id="gameYear" placeholder=game.gameYear}}
+          </div>
+
+          <div class="form-group">
+              <label for="imgURL">Update Image URL:</label>
+              {{input value=imgURL id="imgURL" placeholder=game.imgURL}}
+          </div>
+
+          <div class="form-group">
+              <label for="gameDescription">Update Description:</label>
+              {{input value=gameDescription id="gameDescription" placeholder=game.gameDescription}}
+          </div>
+
+        <button {{action 'updateGame' game}}>Update</button>
+      </form>
+    </div>
+{{else}}
+    <button {{action 'updateGameForm'}}>Update Game</button>
+{{/if}}
