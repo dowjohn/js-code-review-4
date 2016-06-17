@@ -6,5 +6,6 @@ export default DS.Model.extend({
     gameDeveloper: DS.attr('string'),
     gameYear: DS.attr('number'),
     imgURL: DS.attr('string'),
+    gameDescription: DS.attr('string'),
     reviews: DS.hasMany('review', {async: true}),
 });

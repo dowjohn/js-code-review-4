@@ -11,3 +11,11 @@ body {
   background-color: #363636;
   color: #e74c3c;
 }
+
+.imgTile {
+    width: 200px;
+}
+
+.imgDetails {
+    width: 100%;
+}

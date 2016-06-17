@@ -9,6 +9,7 @@ export default Ember.Component.extend({
                 gameDeveloper: this.get('gameDeveloper'),
                 gameYear: this.get('gameYear'),
                 imgURL: this.get('imgURL'),
+                gameDescription: this.get('gameDescription'),
             };
             this.sendAction('saveGame', params);
             this.set('gameName', '');
@@ -16,6 +17,7 @@ export default Ember.Component.extend({
             this.set('gameDeveloper', '');
             this.set('gameYear');
             this.set('imgURL');
+            this.set('gameDescription', '');
         },
     }
 });

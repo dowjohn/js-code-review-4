@@ -2,5 +2,6 @@
     <div class="col-sm-4 thriftyBox">
         <h4>{{game.gameName}}</h4>
         <p>{{game.gameGenre}}</p>
+        {{#link-to 'game' game.id}}<p><img class='imgTile' src={{game.imgURL}} alt="game image"></p>{{/link-to}}
     </div>
 {{/each}}
