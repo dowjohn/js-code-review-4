@@ -1,10 +1,8 @@
+
 <div class="row">
     <div class="col-sm-6 centerText">
         <p><img src={{model.imgURL}} class='imgDetails' alt="game image"></p>
-        {{model.gameName}} |
-        {{model.gameGenre}} |
-        {{model.gameDeveloper}} |
-        {{model.gameYear}}
+        {{game-details game=model}}
     </div>
     <div class="col-sm-6">
         <h1 class='centerText'>{{model.gameName}}</h1>
