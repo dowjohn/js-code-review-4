@@ -2,6 +2,8 @@
     <div class="col-sm-4 thriftyBox">
         {{game.gameName}}
         <p>{{game.gameGenre}}</p>
+        <button {{action 'addToFavorites' game}}>Add to Favorites</button>
         {{#link-to 'game' game.id}}<p><img class='imgTile' src={{game.imgURL}} alt="game image"></p>{{/link-to}}
     </div>
 {{/each}}
+{{favorite-list}}
