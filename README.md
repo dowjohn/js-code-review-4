@@ -1,7 +1,6 @@
 # Js-code-review-4
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+This web application is a game review site that allows addition of reviews and ratings. It uses firebase as cloud storage for reviews and games.
 
 ## Prerequisites
 
@@ -41,7 +40,7 @@ Make use of the many generators for code, try `ember help generate` for more det
 
 ### Deploying
 
-Specify what it takes to deploy your app.
+See Ember documentation for Application deployment using hosting via firebase.
 
 ## Further Reading / Useful Links
 
@@ -50,4 +49,3 @@ Specify what it takes to deploy your app.
 * Development Browser Extensions
   * [ember inspector for chrome](https://chrome.google.com/webstore/detail/ember-inspector/bmdblncegkenkacieihfhpjfppoconhi)
   * [ember inspector for firefox](https://addons.mozilla.org/en-US/firefox/addon/ember-inspector/)
-
