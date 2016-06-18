@@ -1,5 +1,5 @@
 <div class="row">
-    <div class="col-sm-6">
+    <div class="col-sm-6 centerText">
         <p><img src={{model.imgURL}} class='imgDetails' alt="game image"></p>
         {{model.gameName}} |
         {{model.gameGenre}} |
@@ -8,7 +8,11 @@
     </div>
     <div class="col-sm-6">
         <h1 class='centerText'>{{model.gameName}}</h1>
-
         <p>{{model.gameDescription}}</p>
+    </div>
+</div>
+<div class="row">
+    <div class="col-sm-12">
+        {{new-review saveReview="saveReview" game=model}}
     </div>
 </div>

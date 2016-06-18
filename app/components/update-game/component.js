@@ -7,7 +7,6 @@ export default Ember.Component.extend({
             this.set('updateGameForm', true);
         },
         updateGame(game) {
-            debugger;
             var params = {
                 gameName: this.get('gameName'),
                 gameGenre: this.get('gameGenre'),

@@ -13,7 +13,8 @@ body {
 }
 
 .imgTile {
-    width: 200px;
+    width: 225px;
+    max-height: 275px;
 }
 
 .imgDetails {
@@ -22,4 +23,8 @@ body {
 
 .centerText {
     text-align: center;
+}
+
+.thriftyBox {
+    height: 25em;
 }
