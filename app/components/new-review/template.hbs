@@ -17,7 +17,7 @@
 
         <div class="form-group">
             <label for="reviewerReview">Review Content:</label>
-            {{input value=reviewerReview id="reviewerReview"}}
+            {{textarea cols='25' rows='5' value=reviewerReview id="reviewerReview"}}
         </div>
 
         <button {{action 'saveReview'}}>Save Review</button>

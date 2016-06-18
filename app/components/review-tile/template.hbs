@@ -1,0 +1,6 @@
+<div class="col-sm-8">
+    {{#each game.reviews as |review|}}
+        <h1>{{review.reviewerName}} posted: {{review.reviewerDate}} | rated: {{average-rating review}}</h1>
+        <p>{{review.reviewerReview}}</p>
+    {{/each}}
+</div>

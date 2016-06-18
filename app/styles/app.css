@@ -28,3 +28,7 @@ body {
 .thriftyBox {
     height: 25em;
 }
+
+.container {
+    max-width: 959px;
+}
