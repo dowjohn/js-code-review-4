@@ -10,8 +10,15 @@ export default Ember.Component.extend({
                 reviewerReview: this.get('reviewerReview'),
                 game: this.get('game'),
             };
-            console.log(params.game);
-            this.sendAction('saveReview', params);
+            if (this.get('reviewerRating') > 10 || this.get('reviewerRating') < 1) {
+                alert('enter a number between 1 and 10');
+            } else {
+                this.sendAction('saveReview', params);
+                this.set('reviewerName', '');
+                this.set('reviewerDate', '');
+                this.set('reviewerRating', '');
+                this.set('reviewerReview', '');
+            };
         },
     }
 });

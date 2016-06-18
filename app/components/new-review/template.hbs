@@ -11,8 +11,8 @@
             {{input value=reviewerDate id="reviewerDate"}}
         </div>
         <div class="form-group">
-            <label for="reviewerRating">Review Rating:</label>
-            {{input value=reviewerRating id="reviewerRating"}}
+            <label for="reviewerRating">Review Rating (between 1-10):</label>
+            {{input type='number' min=1 max=10 value=reviewerRating id="reviewerRating"}}
         </div>
 
         <div class="form-group">
